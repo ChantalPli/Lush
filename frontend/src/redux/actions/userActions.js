@@ -56,7 +56,7 @@ const userActions = {
                     }
                 })
             } else {
-                console.log(user.data.message)
+                alertsToasts('error', user.data.message)
             }
 
         }

@@ -149,9 +149,18 @@
 }
 
 .css-u0y7p5-MuiGrid-root > a{
-    color: #0f4c5c;
+    /* color: #0f4c5c; */
     font-size: 1.5rem;
     text-decoration: none;
+        font-size: 18px;
+        width: 40%;
+        margin-left: 60px;
+        color: white;
+        background: rgba(0, 100, 0, 0.75);
+        border-radius: 6px;
+        padding: 16px;
+        text-decoration: none;
+    
 }
 
 @media (max-width: 768px) {

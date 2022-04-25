@@ -20,10 +20,23 @@ const sendEmail = async (email, uniqueString) => {
     const mailOptions = {
         from: user,
         to: email,
-        subject: 'Verificacion de email usuario',
-        html: `<div >
-            <h1 style='color:red'>To verify your email please press <a href='${process.env.LUSH_BACKEND}/api/verify/${uniqueString}'>here</a> para confirma tu email. Thank you!</h1>
-        </div>`
+        subject: "Hi There! We're Lush, please confirm your e-mail adress.",
+        html: `<table>
+    <thead>
+      <tr>
+        <th colspan="2"><img src="https://images.pexels.com/photos/793012/pexels-photo-793012.jpeg" alt="plant" width="600" height="350"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2"><h1 style="color: rgba(0, 0, 0, 0.79); font-size: 2rem; text-align: center;" >Welcome to Lush App</h1></td>
+      </tr>
+      <tr>
+        <td colspan="2"><h2 style="color: rgba(0, 0, 0, 0.79); font-size: 1rem; text-align: center;">Please click <a style="color: rgba(0, 0, 0, 0.557);" href="http://localhost:4000/api/verify/${uniqueString}">here</a> to confirm your email adress.</h2></td>
+      </tr>
+    </tbody>
+    </table>
+        `
     };
     await transporter.sendMail(mailOptions, (error, response) => {
         if (error) {
@@ -41,8 +54,8 @@ const userController = {
         if (user) {
             user.emailVerified = true;
             await user.save();
-            // Esto es para que redireccione a la pagina de signin y para que el usuario siga con el proceso.
-            res.redirect(process.env.LUSH_FRONTEND + '/signin');
+            
+            res.redirect("http://localhost:3000/signin");
         } else {
             res.json({
                 success: false,

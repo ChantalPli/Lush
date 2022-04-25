@@ -17,7 +17,7 @@ const validator = (req, res, next) => {
             'string.min': 'Your password should be at least 8 characters long and it should contain  lowercase, uppercase and numbers',
             'string.pattern': 'Your password should be alphanumeric with at least 1 number'
         }),
-        country: joi.string().required(),
+        profileurl: joi.string().required(),
         from: joi.string().required()
     });
     const validation = schema.validate(req.body, { abortEarly: false });

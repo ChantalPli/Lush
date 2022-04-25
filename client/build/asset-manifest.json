@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e243d31a.css",
+    "main.js": "/static/js/main.3269f74b.js",
+    "static/js/787.7ab3f3e1.chunk.js": "/static/js/787.7ab3f3e1.chunk.js",
+    "static/media/herosignup.jpg": "/static/media/herosignup.bea9bded01ea41b06957.jpg",
+    "static/media/qioz11.jpeg": "/static/media/qioz11.614efb0c8b26f50ec984.jpeg",
+    "static/media/heroAdmin.jpg": "/static/media/heroAdmin.d9d16fc44645365619c6.jpg",
+    "static/media/herosignin.jpg": "/static/media/herosignin.a9cfdeaf2d600c212137.jpg",
+    "static/media/heroBlog.jpg": "/static/media/heroBlog.219d8afedd9022923a01.jpg",
+    "static/media/heroShop.jpg": "/static/media/heroShop.61e501c3531ffbb70c74.jpg",
+    "static/media/herodetails.jpg": "/static/media/herodetails.0a2125ab3b779d706d4c.jpg",
+    "static/media/heroCart.jpg": "/static/media/heroCart.39b88e7c98c93af1567b.jpg",
+    "static/media/hero.jpg": "/static/media/hero.4de5fe2370a61edca360.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.e243d31a.css.map": "/static/css/main.e243d31a.css.map",
+    "main.3269f74b.js.map": "/static/js/main.3269f74b.js.map",
+    "787.7ab3f3e1.chunk.js.map": "/static/js/787.7ab3f3e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e243d31a.css",
+    "static/js/main.3269f74b.js"
+  ]
+}

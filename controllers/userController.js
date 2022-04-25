@@ -32,7 +32,7 @@ const sendEmail = async (email, uniqueString) => {
         <td colspan="2"><h1 style="color: rgba(0, 0, 0, 0.79); font-size: 2rem; text-align: center;" >Welcome to Lush App</h1></td>
       </tr>
       <tr>
-        <td colspan="2"><h2 style="color: rgba(0, 0, 0, 0.79); font-size: 1rem; text-align: center;">Please click <a style="color: rgba(0, 0, 0, 0.557);" href="http://localhost:4000/api/verify/${uniqueString}">here</a> to confirm your email adress.</h2></td>
+        <td colspan="2"><h2 style="color: rgba(0, 0, 0, 0.79); font-size: 1rem; text-align: center;">Please click <a style="color: rgba(0, 0, 0, 0.557);" href="https://lushplants.herokuapp.com/api/verify/${uniqueString}">here</a> to confirm your email adress.</h2></td>
       </tr>
     </tbody>
     </table>
@@ -55,7 +55,7 @@ const userController = {
             user.emailVerified = true;
             await user.save();
             
-            res.redirect("http://localhost:3000/signin");
+            res.redirect("https://lushplants.herokuapp.com/signin");
         } else {
             res.json({
                 success: false,

@@ -3,14 +3,14 @@ import axios from 'axios'
 const blogActions = {
     fetchBlogs: () => {
     return async (dispatch, getState) => {
-      const res = await axios.get('http://localhost:4000/api/blog')
+      const res = await axios.get('https://lushplants.herokuapp.com/api/blog')
       
       dispatch({ type: 'blogs/fetch', payload: res.data.content.blogs })
     }
   },
   blogData: (blogData) => {
     return async (dispatch, getState) => {
-        const res = await axios.post('http://localhost:4000/api/blog', blogData)
+        const res = await axios.post('https://lushplants.herokuapp.com/api/blog', blogData)
         dispatch({
             type: 'blog/data',
             payload: {

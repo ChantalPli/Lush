@@ -4,7 +4,7 @@ const plantActions = {
   fetchPlants: () => {
     return async (dispatch, getState) => {
       dispatch({ type: 'plant/unload' });
-      const res = await axios.get('http://localhost:4000/api/plants')
+      const res = await axios.get('https://lushplants.herokuapp.com/api/plants')
       // console.log(res.data)
       dispatch({ type: 'plant/fetch', payload: res.data.content.plants })
     }
@@ -13,7 +13,7 @@ const plantActions = {
 
     return async (dispatch, getState) => {
       dispatch({ type: 'plant/unload' });
-      const res = await axios.get('http://localhost:4000/api/plants/' + id);
+      const res = await axios.get('https://lushplants.herokuapp.com/api/plants/' + id);
 
       try {
         dispatch({ type: 'plant/fetchOne', payload: res.data.content.plant })
@@ -26,7 +26,7 @@ const plantActions = {
   deletePlant: (id) => {
     return async (dispatch, getState) => {
       try {
-        const res = await axios.delete('http://localhost:4000/api/plants/' + id)
+        const res = await axios.delete('https://lushplants.herokuapp.com/api/plants/' + id)
         dispatch({ type: 'plant/delete', payload: res.data.response })
       } catch (err) {
         console.log(err)
@@ -41,7 +41,7 @@ const plantActions = {
   savePlant: (plantData) => {
     console.log(plantData)
     return async (dispatch, getState) => {
-      const respuesta = await axios.post('http://localhost:4000/api/plants', plantData)
+      const respuesta = await axios.post('https://lushplants.herokuapp.com/api/plants', plantData)
       dispatch({
         type: 'plants/savePlant',
         payload: respuesta.data.response.plants,

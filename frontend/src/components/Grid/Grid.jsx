@@ -37,51 +37,51 @@ export default function StandardImageList() {
 
 const itemData = [
     {
-        img: 'http://localhost:4000/assets/plant-decor12.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/plant-decor12.jpeg',
         title: 'Breakfast',
     },
     {
-        img: 'http://localhost:4000/assets/plant.decoM14.webp',
+        img: 'https://lushplants.herokuapp.com/assets/plant.decoM14.webp',
         title: 'Burger',
     },
     {
-        img: 'http://localhost:4000/assets/plant.decoM13.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/plant.decoM13.jpeg',
         title: 'Camera',
     },
     {
-        img: 'http://localhost:4000/assets/plant_deco2.png',
+        img: 'https://lushplants.herokuapp.com/assets/plant_deco2.png',
         title: 'Coffee',
     },
     {
-        img: 'http://localhost:4000/assets/plant-decor03.jpg',
+        img: 'https://lushplants.herokuapp.com/assets/plant-decor03.jpg',
         title: 'Hats',
     },
     {
-        img: 'http://localhost:4000/assets/deco03.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/deco03.jpeg',
         title: 'Honey',
     },
     {
-        img: 'http://localhost:4000/assets/plant-decor08.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/plant-decor08.jpeg',
         title: 'Basketball',
     },
     {
-        img: 'http://localhost:4000/assets/plant-decor06.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/plant-decor06.jpeg',
         title: 'Fern',
     },
     {
-        img: 'http://localhost:4000/assets/plant-decor12.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/plant-decor12.jpeg',
         title: 'Mushrooms',
     },
     {
-        img: 'http://localhost:4000/assets/plant_deco9.webp',
+        img: 'https://lushplants.herokuapp.com/assets/plant_deco9.webp',
         title: 'Mushrooms',
     },
     {
-        img: 'http://localhost:4000/assets/plant-decor07.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/plant-decor07.jpeg',
         title: 'Mushrooms',
     },
     {
-        img: 'http://localhost:4000/assets/plant-decor04.jpeg',
+        img: 'https://lushplants.herokuapp.com/assets/plant-decor04.jpeg',
         title: 'Mushrooms',
     },
 

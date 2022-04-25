@@ -24,7 +24,7 @@ const userActions = {
 
     signUpUser: (userData) => {
         return async (dispatch, getState) => {
-            const res = await axios.post('http://localhost:4000/api/auth/signup', userData)
+            const res = await axios.post('https://lushplants.herokuapp.com/api/auth/signup', userData)
             dispatch({
                 type: 'message',
                 payload: {
@@ -42,7 +42,7 @@ const userActions = {
     },
     signInUser: (loggedUser) => {
         return async (dispatch, getState) => {
-            const user = await axios.post('http://localhost:4000/api/auth/signin', loggedUser)
+            const user = await axios.post('https://lushplants.herokuapp.com/api/auth/signin', loggedUser)
             if (user.data.success) {
                 alertsToasts('success', user.data.message)
                 localStorage.setItem('token', user.data.response.token)
@@ -64,7 +64,7 @@ const userActions = {
     SignOutUser: () => {
         return async (dispatch, getState) => {
             const token = localStorage.getItem('token')
-            const user = await axios.post('http://localhost:4000/api/auth/signout', null, {
+            const user = await axios.post('https://lushplants.herokuapp.com/api/auth/signout', null, {
                 headers: {
                     'Authorization': 'Bearer ' + token
                 }
@@ -85,7 +85,7 @@ const userActions = {
         return async (dispatch, getState) => {
             //console.log(token)
             const token = localStorage.getItem('token')
-            const user = await axios.get('http://localhost:4000/api/auth/signin', {
+            const user = await axios.get('https://lushplants.herokuapp.com/api/auth/signin', {
                 headers: {
                     'Authorization': 'Bearer ' + token
                 }

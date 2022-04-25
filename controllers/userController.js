@@ -3,7 +3,7 @@ const bcryptjs = require('bcryptjs');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
-const User = require('../models/User');
+const User = require('../models/user');
 
 const sendEmail = async (email, uniqueString) => {
     const user = 'lushplantsapp@gmail.com';

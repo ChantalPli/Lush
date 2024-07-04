@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeHero from '../components/HomeHero/HomeHero'
 
-import HomeWrapper from '../components/HomeWrapper/HomeWrapper'
+// import HomeWrapper from '../components/HomeWrapper/HomeWrapper'
 import StandardImageList from '../components/Grid/Grid'
 
 import CarouselComponent from '../components/Carousel/Carousel'

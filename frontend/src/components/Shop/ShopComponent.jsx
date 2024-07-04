@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import plantActions from '../../redux/actions/plantActions'
 import { connect } from 'react-redux';
 import { Link as LinkRouter } from "react-router-dom"
@@ -99,7 +99,7 @@ function ShopComponent(props) {
     })
   }
 
-  const { allPlants: data, plants, loaded, filter } = props
+  const { allPlants: plants, loaded, filter } = props
 
   const { fetchPlants, addToCart, filterPlants } = props
 
